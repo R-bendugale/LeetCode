@@ -1,5 +1,5 @@
 class Solution():
-  def merge(self,nums1,m,nums2,n):
+  def merge(self, nums1,m,nums2,n):
     i=m-1
     j=n-1
     k=m+n-1
@@ -15,9 +15,8 @@ class Solution():
       nums1[k]=nums2[j]
       j-=1
       k-=1
-nums1=[1,3,5,7,0,0,0]
+nums1=[1,0,0,0]
 nums2=[2,4,6]
 s=Solution()
-s.merge(nums1,4,nums2,3)
+s.merge(nums1,1,nums2,3)
 print(nums1)
-
